@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-color: #111d4a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #eee;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: end;
+}
+
+#charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    grid-template-columns: 5fr 1fr;
+}
+
+.character > #name {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.character > #house {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.character > #actor {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.character > #species {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.character > img {
+    max-height: 125px;
+    margin-bottom: 0px;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
